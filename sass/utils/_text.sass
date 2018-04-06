@@ -1,0 +1,11 @@
+@each $alignment in left, right, center
+
+    .text-#{$alignment}
+        text-align: #{$alignment} !important
+
+    @each $breakpoint in map-keys($breakpoints)
+
+        @media screen and (min-width: map-get($breakpoints, $breakpoint))
+
+            .#{$breakpoint}\:text-#{$alignment}
+                text-align: #{$alignment} !important
