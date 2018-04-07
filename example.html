@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8"/>
 
-    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Source+Code+Pro:300,400,700,900|Source+Sans+Pro:200,400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Source+Code+Pro:300,400,700,900|Source+Sans+Pro:200,400,400i,700,700i"
+          rel="stylesheet">
     <link rel="stylesheet" href="dist/gds.min.css"/>
     <script src="dist/gds.min.js"></script>
 
@@ -12,65 +13,79 @@
     <title>Gephart - Design system</title>
 </head>
 <body>
-<h1>Gephart - Design system</h1>
+<div id="left">
 
-<h2>Layout</h2>
-
-<h3>.grid</h3>
-
-<div class="row row--example">
-    <div class="col col-6 md:col-4 lg:col-3">.col-6 .md:col-4 .lg:col-3</div>
-    <div class="col col-6 md:col-4 lg:col-3">.col-6 .md:col-4 .lg:col-3</div>
-    <div class="col col-6 md:col-4 lg:col-3">.col-6 .md:col-4 .lg:col-3</div>
-    <div class="col col-6 md:col-4 lg:col-3">.col-6 .md:col-4 .lg:col-3</div>
 </div>
 
-<h2>Components</h2>
+<div id="right">
+    <div class="container">
+        <header id="header">
+            <h1>Gephart - Design system</h1>
+        </header>
 
-<h3>.box</h3>
 
-<div class="box">
-    <div class="box__header">Name of the box</div>
-    <div class="box__content">Content</div>
-    <div class="box__footer"><button class="button button--primary">Save</button> <button class="button button--secondary">Close</button></div>
+        <h2>Layout</h2>
+
+        <h3>.grid</h3>
+
+        <div class="row row--example">
+            <div class="col col-6 md:col-4 lg:col-3">.col-6 .md:col-4 .lg:col-3</div>
+            <div class="col col-6 md:col-4 lg:col-3">.col-6 .md:col-4 .lg:col-3</div>
+            <div class="col col-6 md:col-4 lg:col-3">.col-6 .md:col-4 .lg:col-3</div>
+            <div class="col col-6 md:col-4 lg:col-3">.col-6 .md:col-4 .lg:col-3</div>
+        </div>
+
+        <h2>Components</h2>
+
+        <h3>.box</h3>
+
+        <div class="box">
+            <div class="box__header">Name of the box</div>
+            <div class="box__content">Content</div>
+            <div class="box__footer">
+                <button class="button button--primary">Save</button>
+                <button class="button button--secondary">Close</button>
+            </div>
+        </div>
+
+        <h3>.button</h3>
+
+        <p>
+            <button class="button button--primary">.button<strong>.button--primary</strong></button>
+            <button class="button button--secondary">.button<strong>.button--secondary</strong></button>
+        </p>
+
+        <p>
+            <button class="button button--primary button--sm">.button.button--primary<strong>.button--sm</strong>
+            </button>
+            <button class="button button--primary">.button.button--primary</button>
+            <button class="button button--primary button--lg">.button.button--primary<strong>.button--lg</strong>
+            </button>
+        </p>
+
+        <p>
+            <button class="button button--secondary button--sm">.button.button--secondary<strong>.button--sm</strong>
+            </button>
+            <button class="button button--secondary">.button.button--secondary</button>
+            <button class="button button--secondary button--lg">.button.button--secondary<strong>.button--lg</strong>
+            </button>
+        </p>
+
+        <h2>Utilities</h2>
+
+        <h3>.text</h3>
+
+        <ul>
+            <li>.text-left</li>
+            <li>.text-right</li>
+            <li>.text-center</li>
+        </ul>
+
+        <pre>
+            &lt;p class="text-left md:text-center xl:text-right"&gt;content&lt;p&gt;
+        </pre>
+    </div>
 </div>
-
-<pre>
-
-</pre>
-
-<h3>.button</h3>
-
-<p>
-    <button class="button button--primary">.button<strong>.button--primary</strong></button>
-    <button class="button button--secondary">.button<strong>.button--secondary</strong></button>
-</p>
-
-<p>
-    <button class="button button--primary button--sm">.button.button--primary<strong>.button--sm</strong></button>
-    <button class="button button--primary">.button.button--primary</button>
-    <button class="button button--primary button--lg">.button.button--primary<strong>.button--lg</strong></button>
-</p>
-
-<p>
-    <button class="button button--secondary button--sm">.button.button--secondary<strong>.button--sm</strong></button>
-    <button class="button button--secondary">.button.button--secondary</button>
-    <button class="button button--secondary button--lg">.button.button--secondary<strong>.button--lg</strong></button>
-</p>
-
-<h2>Utilities</h2>
-
-<h3>.text</h3>
-
-<ul>
-    <li>.text-left</li>
-    <li>.text-right</li>
-    <li>.text-center</li>
-</ul>
-
-<pre>
-    &lt;p class="text-left md:text-center xl:text-right"&gt;content&lt;p&gt;
-</pre>
 
 </body>
 </html>
