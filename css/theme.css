@@ -10,8 +10,31 @@
 
 #header {
     background: #eccd40;
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+#header h1 {
+    margin-bottom: 0
 }
 
 body {
     color: #333;
+}
+
+#left {
+    float: left;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 200px;
+}
+
+#right {
+    margin-left: 200px;
+}
+
+#left, #right {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
