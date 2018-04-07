@@ -27,14 +27,14 @@ body {
     position: sticky;
     top: 0;
     left: 0;
-    width: 200px;
+    width: 250px;
+    border-right: 1px dashed #eccd40;
 }
 
 #right {
-    margin-left: 200px;
+    margin-left: 250px;
 }
 
 #left, #right {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 40px 20px
 }
