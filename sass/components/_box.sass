@@ -1,0 +1,21 @@
+.box
+    border: 1px #ddd solid
+    border-radius: $border-radius
+    box-shadow: $box-shadow
+
+    &__header, &__content
+        border-bottom: 1px $color-gray solid
+
+    &__header, &__content, &__footer
+        padding: 15px 20px
+
+
+    &__header
+        background: $color-dark
+        color: $color-light
+        border-top-left-radius: $border-radius
+        border-top-right-radius: $border-radius
+
+    &__body
+        padding: 5px 20px
+        border-bottom: 1px #ddd solid
