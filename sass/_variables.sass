@@ -4,12 +4,8 @@ $font-family: 'Source Sans Pro', sans-serif
 
 $margin-bottom: 20px
 
-$color-primary: #eccd40
-$color-primary-hover: #d5b630
-
-$color-dark: #333333
-$color-gray: #ddd
-$color-light: #ffffff
+$colors: (primary: #eccd40, dark: #333333, gray: #F9F9F9, light: #FFFFFF)
+$colors-active: (primary: #d5b630, dark: #444444, gray: #E9E9E9, light: #EEEEEE)
 
 $border-radius: 3px
 
@@ -18,20 +14,20 @@ $box-shadow: 0 2px 4px rgba(0,0,0,.05)
 $grid-glue: 20px
 
 // for vender/_reboot.scss
-$black: $color-dark
+$black: map-get($colors, "dark")
 $font-family-base: $font-family
 $font-size-base: 16px
 $font-weight-base: normal
 $line-height-base: 1.4em
-$body-color: $color-dark
-$body-bg: $color-light
+$body-color: map-get($colors, "dark")
+$body-bg: map-get($colors, "light")
 $headings-margin-bottom: $margin-bottom
 $paragraph-margin-bottom: $margin-bottom
 $dt-font-weight: $font-weight-base
-$link-color: $color-primary-hover
-$link-hover-color: $color-primary
+$link-color: map-get($colors-active, "primary")
+$link-hover-color: map-get($colors, "primary")
 $link-decoration: underline
 $link-hover-decoration: underline
 $table-cell-padding: 0
-$table-caption-color: $color-dark
+$table-caption-color: map-get($colors, "dark")
 $label-margin-bottom: 10px

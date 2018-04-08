@@ -1,6 +1,6 @@
 .button
-    border: 2px $color-primary solid
-    color: $color-dark
+    border: 2px map-get($colors, "primary") solid
+    color: map-get($colors, "dark")
     border-radius: 3px
     display: inline-block
     line-height: 36px
@@ -11,15 +11,15 @@
     transition: all .2s
 
     &--primary
-        background: $color-primary
+        background: map-get($colors, "primary")
 
         &:hover
-            background: $color-primary-hover
-            border-color: $color-primary-hover
+            background: map-get($colors-active, "primary")
+            border-color: map-get($colors-active, "primary")
 
     &--secondary
         &:hover
-            border-color: $color-primary-hover
+            border-color: map-get($colors-active, "primary")
 
     &--sm
         line-height: 24px

@@ -1,0 +1,12 @@
+@each $color in map-keys($colors)
+    .bg-#{$color}
+        background: map-get($colors, $color)
+
+    .bg-#{$color}-active
+        background: map-get($colors-active, $color)
+
+    .color-#{$color}
+        color: map-get($colors, $color)
+
+    .color-#{$color}-active
+        color: map-get($colors-active, $color)

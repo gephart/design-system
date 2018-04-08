@@ -52,7 +52,7 @@ body {
     color: #eccd40;
     font-size: 40px;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 6px;
 }
 
 #left .container, #right .container {
@@ -123,5 +123,5 @@ h3 > a[id]:before {
 
 h2:hover > a[id]:before,
 h3:hover > a[id]:before {
-    opacity: 1;
+    opacity: .8;
 }
