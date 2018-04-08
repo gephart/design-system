@@ -1,17 +1,11 @@
 .row--example {
-    background: #ddd;
+    background: #F9F9F9;
 }
 
 .row--example .col {
-    border: 1px #ccc solid;
+    border: 1px #E9E9E9 solid;
     padding-top: 10px;
     padding-bottom: 10px;
-}
-
-#header {
-    background: #eccd40;
-    padding-top: 20px;
-    padding-bottom: 20px
 }
 
 body {

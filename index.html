@@ -36,6 +36,7 @@
             <ul>
                 <li><a class="nav-link" href="#s-box">Boxs</a></li>
                 <li><a class="nav-link" href="#s-button">Buttons</a></li>
+                <li><a class="nav-link" href="#s-table">Tables</a></li>
             </ul>
 
             <li><a class="nav-link" href="#s-utilities">Utilities</a></li>
@@ -117,13 +118,55 @@
             </button>
         </p>
 
+        <h3><a id="s-button"></a>Table</h3>
+
+        <pre><code>.table</code></pre>
+
+        <table class="table">
+            <tr><th>th</th><th>th</th><th>th</th><th>th</th></tr>
+            <tr><td>td</td><td>td</td><td>td</td><td>td</td></tr>
+            <tr><td>td</td><td>td</td><td>td</td><td>td</td></tr>
+            <tr><td>td</td><td>td</td><td>td</td><td>td</td></tr>
+            <tr><td>td</td><td>td</td><td>td</td><td>td</td></tr>
+        </table>
+
+        <pre><code>.table .table--striped</code></pre>
+
+        <table class="table table--striped">
+            <tr><th>th</th><th>th</th><th>th</th><th>th</th></tr>
+            <tr><td>td</td><td>td</td><td>td</td><td>td</td></tr>
+            <tr><td>td</td><td>td</td><td>td</td><td>td</td></tr>
+            <tr><td>td</td><td>td</td><td>td</td><td>td</td></tr>
+            <tr><td>td</td><td>td</td><td>td</td><td>td</td></tr>
+        </table>
+
+        <pre><code>.table .table--bordered</code></pre>
+
+        <table class="table table--bordered">
+            <tr><th>th</th><th>th</th><th>th</th><th>th</th></tr>
+            <tr><td>td</td><td>td</td><td>td</td><td>td</td></tr>
+            <tr><td>td</td><td>td</td><td>td</td><td>td</td></tr>
+            <tr><td>td</td><td>td</td><td>td</td><td>td</td></tr>
+            <tr><td>td</td><td>td</td><td>td</td><td>td</td></tr>
+        </table>
+
+        <pre><code>.table .table--bordered-lines</code></pre>
+
+        <table class="table table--bordered-lines">
+            <tr><th>th</th><th>th</th><th>th</th><th>th</th></tr>
+            <tr><td>td</td><td>td</td><td>td</td><td>td</td></tr>
+            <tr><td>td</td><td>td</td><td>td</td><td>td</td></tr>
+            <tr><td>td</td><td>td</td><td>td</td><td>td</td></tr>
+            <tr><td>td</td><td>td</td><td>td</td><td>td</td></tr>
+        </table>
+
         <h2><a id="s-utilities"></a>Utilities</h2>
 
         <h3><a id="s-spacing"></a>Spacing</h3>
 
         <p>Sizes:</p>
 
-        <table class="table">
+        <table class="table table--bordered">
             <tr>
                 <th>.*-0</th>
                 <td>0px !important</td>
@@ -148,9 +191,10 @@
 
         <p>Direction:</p>
 
-        <table class="table">
+        <table class="table table--bordered">
             <tr>
                 <th></th>
+                <th>all</th>
                 <th>left and right</th>
                 <th>top and bottom</th>
                 <th>top</th>
@@ -180,6 +224,10 @@
             </tr>
         </table>
 
+        <p>Responsivity:</p>
+
+        <pre><code>.md:p-0</code></pre>
+
         <h3><a id="s-text"></a>Text alignment</h3>
 
         <ul>
@@ -188,9 +236,7 @@
             <li>.text-center</li>
         </ul>
 
-        <pre>
-            &lt;p class="text-left md:text-center xl:text-right"&gt;content&lt;p&gt;
-        </pre>
+        <pre><code>&lt;p class="text-left md:text-center xl:text-right"&gt;content&lt;p&gt;</code></pre>
     </div>
 </div>
 

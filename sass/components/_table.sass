@@ -1,0 +1,23 @@
+.table
+    border-collapse: collapse
+    border-spacing: 0
+    margin-bottom: $margin-bottom
+
+
+    td, th
+        text-align: left
+        padding: $grid-glue/4 $grid-glue/2
+
+
+    &--striped
+        tr:nth-child(even) td
+            background-color: map-get($colors, gray)
+
+    &--bordered
+        th, td
+            border: 1px map-get($colors-active, gray) solid
+
+    &--bordered-lines
+        th, td
+            border-bottom: 1px map-get($colors-active, gray) solid
+
