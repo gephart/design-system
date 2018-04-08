@@ -1,0 +1,127 @@
+.row--example {
+    background: #ddd;
+}
+
+.row--example .col {
+    border: 1px #ccc solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#header {
+    background: #eccd40;
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+body {
+    color: #333;
+    background: #f9f9F9;
+}
+
+#left {
+    float: left;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 250px;
+}
+
+#left-header {
+    padding: 40px 0;
+}
+
+#left-header img {
+    width: 100%;
+    height: auto;
+}
+
+#right {
+    margin-left: 250px;
+    background: #fff;
+}
+
+#right-header {
+    padding: 100px 0;
+    margin-bottom: 40px;
+    background: linear-gradient(#222, transparent) no-repeat, url(../img/header.jpg) #fff no-repeat top center;
+}
+
+#right-header h1 {
+    margin-bottom: 0;
+    color: #eccd40;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#left .container, #right .container {
+    padding: 0 40px
+}
+
+#left ul {
+    padding: 0;
+    list-style: none;
+    margin: 0 0 20px 0;
+}
+
+#left ul li {
+    display: block;
+    margin: 0 -40px;
+}
+
+#left ul a {
+    display: block;
+    padding: 5px 40px;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+}
+
+#left ul a:hover, #left ul a:focus {
+    color: #eccd40;
+}
+
+#left ul a.active:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 100%;
+    background: #eccd40;
+}
+
+#left ul li {
+    font-weight: bold;
+}
+
+#left ul ul li {
+    font-weight: normal;
+}
+
+body {
+    position: relative;
+}
+
+h2, h3 {
+    position: relative;
+}
+
+h2 > a[id],
+h3 > a[id] {
+    position: absolute;
+    left: -20px;
+    top: 0;
+}
+
+h2 > a[id]:before,
+h3 > a[id]:before {
+    content: "#";
+    opacity: 0;
+}
+
+h2:hover > a[id]:before,
+h3:hover > a[id]:before {
+    opacity: 1;
+}

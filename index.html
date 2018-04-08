@@ -5,49 +5,60 @@
 
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Source+Code+Pro:300,400,700,900|Source+Sans+Pro:200,400,400i,700,700i"
           rel="stylesheet">
+
     <link rel="stylesheet" href="dist/gds.min.css"/>
     <script src="dist/gds.min.js"></script>
 
-    <link rel="stylesheet" href="css/theme.css"/>
+    <link rel="stylesheet" href="assets/theme.css"/>
 
     <title>Gephart - Design system</title>
 </head>
-<body>
-
-<header id="header" class="text-center">
-    <h1>Gephart - Design system</h1>
-</header>
+<body data-spy="scroll" data-target="#nav-scrollspy">
 
 <div id="left">
-    <div class="container">
-        <p>Layout</p>
+    <div id="left-header">
+        <div class="container">
+            <img src="img/gephart.svg" alt="Gephart"/>
+        </div>
+    </div>
 
-        <ul>
-            <li><a href="#grid">.grid</a></li>
-        </ul>
+    <div class="container" id="nav-scrollspy">
+        <ul class="nav">
+            <li><a class="nav-link" href="#s-layout">Layout</a></li>
 
-        <p>Components</p>
+            <ul>
+                <li><a class="nav-link" href="#s-grid">.grid</a></li>
+            </ul>
 
-        <ul>
-            <li><a href="#box">.box</a></li>
-            <li><a href="#button">.button</a></li>
-        </ul>
+            <li><a class="nav-link" href="#s-components">Components</a></li>
 
-        <p>Utilities</p>
+            <ul>
+                <li><a class="nav-link" href="#s-box">.box</a></li>
+                <li><a class="nav-link" href="#s-button">.button</a></li>
+            </ul>
 
-        <ul>
-            <li><a href="#text">.text</a></li>
+            <li><a class="nav-link" href="#s-utilities">Utilities</a></li>
+
+            <ul>
+                <li><a class="nav-link" href="#s-text">.text</a></li>
+            </ul>
         </ul>
     </div>
 </div>
 
 <div id="right">
+    <div id="right-header" class="text-center">
+        <div class="container">
+            <h1>Design system</h1>
+        </div>
+    </div>
+
     <div class="container">
 
 
-        <h2><a name="layout"></a>Layout</h2>
+        <h2><a id="s-layout"></a>Layout</h2>
 
-        <h3><a name="grid"></a>.grid</h3>
+        <h3><a id="s-grid"></a>.grid</h3>
 
         <div class="row row--example">
             <div class="col col-6 md:col-4 lg:col-3">.col-6 .md:col-4 .lg:col-3</div>
@@ -56,9 +67,9 @@
             <div class="col col-6 md:col-4 lg:col-3">.col-6 .md:col-4 .lg:col-3</div>
         </div>
 
-        <h2><a name="components"></a>Components</h2>
+        <h2><a id="s-components"></a>Components</h2>
 
-        <h3><a name="box"></a>.box</h3>
+        <h3><a id="s-box"></a>.box</h3>
 
         <div class="box">
             <div class="box__header">Name of the box</div>
@@ -69,7 +80,7 @@
             </div>
         </div>
 
-        <h3><a name="button"></a>.button</h3>
+        <h3><a id="s-button"></a>.button</h3>
 
         <p>
             <button class="button button--primary">.button<strong>.button--primary</strong></button>
@@ -92,9 +103,9 @@
             </button>
         </p>
 
-        <h2><a name="utilities"></a>Utilities</h2>
+        <h2><a id="s-utilities"></a>Utilities</h2>
 
-        <h3><a name="text"></a>.text</h3>
+        <h3><a id="s-text"></a>.text</h3>
 
         <ul>
             <li>.text-left</li>
@@ -107,6 +118,8 @@
         </pre>
     </div>
 </div>
+
+<script src="assets/theme.js"></script>
 
 </body>
 </html>

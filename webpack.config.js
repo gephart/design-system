@@ -1,4 +1,5 @@
 let path = require("path");
+let webpack = require('webpack');
 let ExtractTextPlugin = require("extract-text-webpack-plugin");
 let autoprefixer = require('autoprefixer');
 
@@ -10,7 +11,8 @@ function createWebpackConfig() {
 
     const WebpackConfig = {
         entry: [
-            "./sass/main.sass"
+            "./sass/main.sass",
+            "./js/main.js"
         ],
         output: {
             path: path.resolve(__dirname, outputDir),
@@ -21,6 +23,20 @@ function createWebpackConfig() {
         devtool: "source-map",
         module: {
             rules: [
+                {
+                    test: /\.js$/,
+                    use: [
+                        {
+                            loader: "babel-loader",
+                            options: {
+                                presets: ['babel-preset-env'],
+                                plugins: ["transform-object-rest-spread"]
+                            }
+                        }
+                    ]
+                },
+
+
                 {
                     test: /\.(sass)$/,
                     use: ExtractTextPlugin.extract({
@@ -54,8 +70,13 @@ function createWebpackConfig() {
                 filename: "gds.min.css",
                 allChunks: true
             }),
+            new webpack.ProvidePlugin({
+                $: "jquery",
+                jQuery: "jquery",
+                "window.jQuery": "jquery",
+                "window.$": "jquery"
+            }),
         ]
-
     };
 
     return WebpackConfig;
