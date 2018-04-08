@@ -1,0 +1,40 @@
+$spacing-types: (p: "padding", m: "margin")
+$spacing-sizes: (0: 0, 1: $grid-glue/2, 2: $grid-glue, 3: $grid-glue*1.5, 4: $grid-glue*2)
+$spacing-directions: (t: "top", r: "right", b: "bottom", l: "left")
+
+@each $t, $type in $spacing-types
+    @each $s, $size in $spacing-sizes
+        .#{$t}-#{$s}
+            #{$type}: $size !important
+
+        .#{$t}-x-#{$s}
+            #{$type}-left: $size !important
+            #{$type}-right: $size !important
+
+        .#{$t}-y-#{$s}
+            #{$type}-top: $size !important
+            #{$type}-bottom: $size !important
+
+        @each $d, $direction in $spacing-directions
+
+            .#{$t}-#{$d}-#{$s}
+                #{$type}-#{$direction}: $size !important
+
+        @each $breakpoint in map-keys($breakpoints)
+
+            @media screen and (min-width: map-get($breakpoints, $breakpoint))
+                .#{$breakpoint}\:#{$t}-#{$s}
+                    #{$type}: $size !important
+
+                .#{$breakpoint}\:#{$t}-x-#{$s}
+                    #{$type}-left: $size !important
+                    #{$type}-right: $size !important
+
+                .#{$breakpoint}\:#{$t}-y-#{$s}
+                    #{$type}-top: $size !important
+                    #{$type}-bottom: $size !important
+
+                @each $d, $direction in $spacing-directions
+
+                    .#{$breakpoint}\:#{$t}-#{$d}-#{$s}
+                        #{$type}-#{$direction}: $size !important

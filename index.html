@@ -28,20 +28,21 @@
             <li><a class="nav-link" href="#s-layout">Layout</a></li>
 
             <ul>
-                <li><a class="nav-link" href="#s-grid">.grid</a></li>
+                <li><a class="nav-link" href="#s-grid">Grid</a></li>
             </ul>
 
             <li><a class="nav-link" href="#s-components">Components</a></li>
 
             <ul>
-                <li><a class="nav-link" href="#s-box">.box</a></li>
-                <li><a class="nav-link" href="#s-button">.button</a></li>
+                <li><a class="nav-link" href="#s-box">Boxs</a></li>
+                <li><a class="nav-link" href="#s-button">Buttons</a></li>
             </ul>
 
             <li><a class="nav-link" href="#s-utilities">Utilities</a></li>
 
             <ul>
-                <li><a class="nav-link" href="#s-text">.text</a></li>
+                <li><a class="nav-link" href="#s-spacing">Spacing</a></li>
+                <li><a class="nav-link" href="#s-text">Text alignment</a></li>
             </ul>
         </ul>
     </div>
@@ -57,7 +58,7 @@
     <div class="container">
         <h2><a id="s-colors"></a>Colors</h2>
 
-        <div class="row row--example">
+        <div class="row row--example m-b-2">
             <div class="col col-3 bg-primary">Primary</div>
             <div class="col col-3 bg-dark color-light">Dark</div>
             <div class="col col-3 bg-light">Light</div>
@@ -73,7 +74,7 @@
 
         <h3><a id="s-grid"></a>.grid</h3>
 
-        <div class="row row--example">
+        <div class="row row--example m-b-2">
             <div class="col col-6 md:col-4 lg:col-3">.col-6 .md:col-4 .lg:col-3</div>
             <div class="col col-6 md:col-4 lg:col-3">.col-6 .md:col-4 .lg:col-3</div>
             <div class="col col-6 md:col-4 lg:col-3">.col-6 .md:col-4 .lg:col-3</div>
@@ -82,9 +83,9 @@
 
         <h2><a id="s-components"></a>Components</h2>
 
-        <h3><a id="s-box"></a>.box</h3>
+        <h3><a id="s-box"></a>Boxs</h3>
 
-        <div class="box">
+        <div class="box m-b-2">
             <div class="box__header">Name of the box</div>
             <div class="box__content">Content</div>
             <div class="box__footer">
@@ -93,7 +94,7 @@
             </div>
         </div>
 
-        <h3><a id="s-button"></a>.button</h3>
+        <h3><a id="s-button"></a>Buttons</h3>
 
         <p>
             <button class="button button--primary">.button<strong>.button--primary</strong></button>
@@ -118,7 +119,68 @@
 
         <h2><a id="s-utilities"></a>Utilities</h2>
 
-        <h3><a id="s-text"></a>.text</h3>
+        <h3><a id="s-spacing"></a>Spacing</h3>
+
+        <p>Sizes:</p>
+
+        <table class="table">
+            <tr>
+                <th>.*-0</th>
+                <td>0px !important</td>
+            </tr>
+            <tr>
+                <th>.*-1</th>
+                <td>1/2 of grid glue (eg. 10px !important)</td>
+            </tr>
+            <tr>
+                <th>.*-2</th>
+                <td>1 of grid glue (eg. 20px !important)</td>
+            </tr>
+            <tr>
+                <th>.*-3</th>
+                <td>3/2 of grid glue (eg. 30px !important)</td>
+            </tr>
+            <tr>
+                <th>.*-4</th>
+                <td>2 of grid glue (eg. 40px !important)</td>
+            </tr>
+        </table>
+
+        <p>Direction:</p>
+
+        <table class="table">
+            <tr>
+                <th></th>
+                <th>left and right</th>
+                <th>top and bottom</th>
+                <th>top</th>
+                <th>right</th>
+                <th>bottom</th>
+                <th>left</th>
+            </tr>
+            <tr>
+                <th>margin</th>
+                <td><code>.m-*</code></td>
+                <td><code>.m-x-*</code></td>
+                <td><code>.m-y-*</code></td>
+                <td><code>.m-t-*</code></td>
+                <td><code>.m-r-*</code></td>
+                <td><code>.m-b-*</code></td>
+                <td><code>.m-l-*</code></td>
+            </tr>
+            <tr>
+                <th>padding</th>
+                <td><code>.p-*</code></td>
+                <td><code>.p-x-*</code></td>
+                <td><code>.p-y-*</code></td>
+                <td><code>.p-t-*</code></td>
+                <td><code>.p-r-*</code></td>
+                <td><code>.p-b-*</code></td>
+                <td><code>.p-l-*</code></td>
+            </tr>
+        </table>
+
+        <h3><a id="s-text"></a>Text alignment</h3>
 
         <ul>
             <li>.text-left</li>
